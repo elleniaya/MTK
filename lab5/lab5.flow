@@ -35,14 +35,14 @@ calculator(e : ArExpr) -> int{
 ar2s(e: ArExpr) -> string {
     switch(e){
         ArSum(lhs, rhs): {
-			"(" + ar2s(lhs) + "+" + ar2s(rhs) + ")";
-		}
+		"(" + ar2s(lhs) + "+" + ar2s(rhs) + ")";
+	}
         ArMult(lhs, rhs): {
-			"(" + ar2s(lhs) + "*" + ar2s(rhs) + ")";
-		}
+		"(" + ar2s(lhs) + "*" + ar2s(rhs) + ")";
+	}
         ArInt(val) : {
-			i2s(val);
-		}
+		i2s(val);
+	}
     }
 }
 
